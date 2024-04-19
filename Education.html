@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarun Gargeya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="overflow-x: hidden;" onload="getpref();">
+    <nav>
+        <div class="name">
+            <span>::TG</span>
+            <span>::TG</span>
+        </div>
+        <div class="navbar">
+            <a class="button" onclick="transitionToPage('Home.html')">
+                <span class="actual-text">Home</span>
+                <span aria-hidden="true" class="hover-text">Home</span>
+            </a>
+            <a class="button" onclick="transitionToPage('About.html')">
+                <span class="actual-text">About</span>
+                <span aria-hidden="true" class="hover-text">About</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Projects.html')">
+                <span class="actual-text">Portfolio</span>
+                <span aria-hidden="true" class="hover-text">Portfolio</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Contact.html')">
+                <span class="actual-text">Contact</span>
+                <span aria-hidden="true" class="hover-text">Contact</span>
+            </a>
+        </div>
+    </nav>
+    <label class="switch" onclick="LDmode()">
+        <input id="switch" type="checkbox">
+        <span class="slider"></span>
+    </label>
+    <main id="mode">
+    <h1 style="width:100vw; font-size: 52px; position: absolute; font-family: quicksand;
+    display: flex; align-items: center; justify-content: center; top: 10%;">My&nbsp;<span class="modecolor">
+            Education</span>
+    </h1>
+    <h1 style="width:100vw; font-size: 20px; position: absolute; font-family: quicksand;
+    display: flex; align-items: center; justify-content: center; top: 20%;">Get to know my&nbsp;<span
+            class="modecolor"> Background.</span>
+    </h1>
+    <div class="card-container" style="left: 10%;">
+        <div class="card">
+            <div class="front-content">
+                <p>10th</p>
+            </div>
+            <div class="content">
+                <p class="heading">ICSE</p>
+                <p>
+                    Chettinad HariShree Vidyalayam<br>
+                    94%
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container" style="left: 40%;">
+        <div class="card">
+            <div class="front-content">
+                <p>12th</p>
+            </div>
+            <div class="content">
+                <p class="heading">CBSE</p>
+                <p>
+                    Chettinad Vidyashram<br>
+                    92%
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container" style="left: 70%;">
+        <div class="card">
+            <div class="front-content">
+                <p>B.Tech</p>
+            </div>
+            <div class="content">
+                <p class="heading">CSE</p>
+                <p>
+                    Amrita Vishwa Vidyapeetham<br>
+                    nil
+                </p>
+            </div>
+        </div>
+    </div>
+    <h1 style="width:100vw; font-size: 52px; position: absolute; font-family: quicksand;
+    display: flex; align-items: center; justify-content: center; top: 60%;"><span class="modecolor">
+            Languages</span>
+    </h1>
+    </h1>
+    <div class="language-container" style="text-align: center;">
+        <div class="lang">
+            <div class="lang-text">
+                <h1 style="font-size: 24px; text-align: left; margin-left: 10px;">English</h1>
+            </div>
+            <div class="prog-bar">
+                <div class="eng-prog">100%</div>
+            </div>
+        </div>
+        <div class="lang">
+            <div class="lang-text">
+                <h1 style="font-size: 24px; text-align: left; margin-left: 10px;">Tamil</h1>
+            </div>
+            <div class="prog-bar">
+                <div class="tam-prog">80%</div>
+            </div>
+        </div>
+        <div class="lang">
+            <div class="lang-text">
+                <h1 style="font-size: 24px; text-align: left; margin-left: 10px;">Telugu</h1>
+            </div>
+            <div class="prog-bar">
+                <div class="tel-prog">60%</div>
+            </div>
+        </div>
+        <div class="lang">
+            <div class="lang-text">
+                <h1 style="font-size: 24px; text-align: left; margin-left: 10px;">Hindi</h1>
+            </div>
+            <div class="prog-bar">
+                <div class="hin-prog">50%</div>
+            </div>
+        </div>
+    </div></main>
+</body>
+</html>

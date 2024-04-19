@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarun Gargeya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="overflow-x: hidden;" onload="getpref();">
+    <nav>
+        <div class="name">
+            <span>::TG</span>
+            <span>::TG</span>
+        </div>
+        <div class="navbar">
+            <a class="button" onclick="transitionToPage('Home.html')">
+                <span class="actual-text">Home</span>
+                <span aria-hidden="true" class="hover-text">Home</span>
+            </a>
+            <a class="button" onclick="transitionToPage('About.html')">
+                <span class="actual-text">About</span>
+                <span aria-hidden="true" class="hover-text">About</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Education.html')">
+                <span class="actual-text">Education</span>
+                <span aria-hidden="true" class="hover-text">Education</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Contact.html')">
+                <span class="actual-text">Contact</span>
+                <span aria-hidden="true" class="hover-text">Contact</span>
+            </a>
+        </div>
+    </nav>
+    <label class="switch" onclick="LDmode()">
+        <input id="switch" type="checkbox">
+        <span class="slider"></span>
+    </label>
+    <main id="mode">
+    <h1 style="width:100vw; font-size: 52px; position: absolute; font-family: quicksand;
+    display: flex; align-items: center; justify-content: center; top: 10%;">My&nbsp;<span class="modecolor">
+            Portfolio</span>
+    </h1>
+    <h1 style="width:100vw; font-size: 20px; position: absolute; font-family: quicksand;
+    display: flex; align-items: center; justify-content: center; top: 20%;">Some of my&nbsp;<span
+            class="modecolor"> Works.</span>
+    </h1>
+    <div class="Portfolio"  id="mode">
+        <div class="port-cont">
+            <div class="portfirst">
+                <div class="imageone">
+                    <video autoplay loop controls style="width: 100%;  border-radius: 15px;">
+                        <source src="che proect - Wokwi ESP32, STM32, Arduino Simulator - Opera 2023-12-10 09-59-25.mp4">
+                    </video>
+                </div>
+                <div class="projone">
+                    <h1 class="modecolor" style="font-family: quicksand; font-size: 32px;">Automated Security System</h1>
+                    <p>Using the Wokwi Simulator website, I created an automated Security System that is tied to the interior lights as well as the locks and alarm</p>
+                    <a class="button" href="https://wokwi.com/projects/383648995978416129" target="_blank">
+                        <span class="actual-text">View&nbsp;Project</span>
+                        <span aria-hidden="true" class="hover-text">View&nbsp;Project</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfirst">
+                <div class="imageone">
+                    <img style="width:600px; border-radius: 15px;" src="yt.png">
+                </div>
+                <div class="projone">
+                    <h1 class="modecolor" style="font-family: quicksand; font-size: 32px;">Social Media Influence</h1>
+                    <p>I have a YouTube channel with videos that have gained 100k views</p>
+                    <a class="button" onclick="transitionToPage('Education.html')">
+                        <span class="actual-text">View&nbsp;Channel</span>
+                        <span aria-hidden="true" class="hover-text">View&nbsp;Channel</span>
+                    </a>
+                </div>
+            </div>
+            <div class="portfirst">
+                <div class="imageone">
+                    <img style="width:600px;  border-radius: 15px;" src="game.png">
+                </div>
+                <div class="projone">
+                    <h1 class="modecolor" style="font-family: quicksand; font-size: 32px;">Game on Roblox</h1>
+                    <p>Using the programming language LuaU, I created a game on ROBLOX with over 250k plays.    </p>
+                    <a class="button" href="https://www.roblox.com/games/4648052023/Vibe-Stop" target="_blank" >
+                        <span class="actual-text">View&nbsp;Project</span>
+                        <span aria-hidden="true" class="hover-text">View&nbsp;Project</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div></main>
+</body>
+</html>

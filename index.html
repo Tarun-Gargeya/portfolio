@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarun Gargeya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="getpref();">
+    <nav>
+        <div class="name">
+            <span>::TG</span>
+            <span>::TG</span>
+        </div>
+        <label class="switch" onclick="LDmode()">
+            <input id="switch" type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div class="navbar">
+            <a class="button"  onclick="transitionToPage('About.html')">
+                <span class="actual-text">About</span>
+                <span aria-hidden="true" class="hover-text">About</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Education.html')">
+                <span class="actual-text">Education</span>
+                <span aria-hidden="true" class="hover-text">Education</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Projects.html')">
+                <span class="actual-text">Portfolio</span>
+                <span aria-hidden="true" class="hover-text">Portfolio</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Contact.html')">
+                <span class="actual-text">Contact</span>
+                <span aria-hidden="true" class="hover-text">Contact</span>
+            </a>
+        </div>
+    </nav>
+    <main id="mode">
+    <div class="HomePageTitle">
+        
+        <h1>
+            <span id="special">Tarun</span> Gargeya
+        </h1>
+        <div class="profession">
+            <h1><span>I am </span><span id="profession"></span></h1>
+        </div>
+        <script>
+            function sleep(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            const phrases = ["a UI/UX Designer", "a Game Developer", "an Animator"];
+            const el = document.getElementById("profession");
+
+            let sleepTime = 50;
+
+            let curPhraseIndex = 0;
+
+            const writeLoop = async () => {
+                while (true) {
+                    let curWord = phrases[curPhraseIndex];
+
+
+                    for (let i = 0; i < curWord.length; i++) {
+                        el.innerText = curWord.substring(0, i + 1);
+                        await sleep(sleepTime);
+                    }
+
+                
+
+                    await sleep(sleepTime * 20);
+
+                    for (let i = curWord.length; i > 0; i--) {
+                        el.innerText = curWord.substring(0, i - 1);
+                        await sleep(sleepTime);
+                    }
+                
+                    await sleep(sleepTime * 5);
+
+                    if (curPhraseIndex === phrases.length - 1) {
+                        curPhraseIndex = 0;
+                    } else {
+                        curPhraseIndex++;
+                    }
+                }
+            };
+
+            writeLoop();
+        </script>
+    </div>
+    <div class="socialcolumn">
+        <a href="mailto:tarungargeya@gmail.com" target="_blank"><img class="socialbutton" src="mail logo.png"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="socialbutton" src="instsgram logo.png"></a>
+        <a href="https://in.linkedin.com" target="_blank"><img class="socialbutton" src="linkedin logo.png "></a>
+    </div></main>
+</body>
+</html>

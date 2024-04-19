@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarun Gargeya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="overflow-x: hidden;" onload="getpref();">
+    <button class="button2" id="btt" onclick="topFunction()">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+        </svg>
+    </button>
+    <nav>
+        <div class="name">
+            <span>::TG</span>
+            <span>::TG</span>
+        </div>
+        <div class="navbar">
+            <a class="button" onclick="transitionToPage('Home.html')">
+                <span class="actual-text">Home</span>
+                <span aria-hidden="true" class="hover-text">Home</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Education.html')">
+                <span class="actual-text">Education</span>
+                <span aria-hidden="true" class="hover-text">Education</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Projects.html')">
+                <span class="actual-text">Portfolio</span>
+                <span aria-hidden="true" class="hover-text">Portfolio</span>
+            </a>
+            <a class="button" onclick="transitionToPage('Contact.html')">
+                <span class="actual-text">Contact</span>
+                <span aria-hidden="true" class="hover-text">Contact</span>
+            </a>
+        </div>
+    </nav>
+    <main id="mode">
+        <div class="about">
+            <label class="switch" onclick="LDmode();">
+                <input id="switch" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <h1 style="width:100vw; font-size: 52px; position: absolute; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center; top: 10%;">About&nbsp;<span class="modecolor">
+                    Me</span>
+            </h1>
+            <h1 style="width:100vw; font-size: 20px; position: absolute; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center; top: 20%;">Get to Know&nbsp;<span
+                    class="modecolor"> Me</span>
+            </h1>
+            <h2 class="aboutmeheading">
+                <div class="about1">I am a creative <span class="modecolor">Game Developer</span><br> based in
+                    Chennai,
+                    Tamil Nadu</div>
+                <div class="about2">
+                    A passionate individual with aspirations in the realms of game development, animation and UI/UX
+                    design.
+                    Passionate about crafting engaging experiences, I am driven by the
+                    desire to seamlessly merge technology with
+                    artistic expression.
+                    Join me on my journey as I navigate the exciting intersection of creativity and technology, fueled
+                    by a love for playing video games and a dedication for the art of programming. </div>
+                <div class="card-container" style="left: 30%; height: 4vw; top: 425px;"">
+                    <a href=" Sample resume.pdf" download="test" target="_blank">
+                    <div class="card">
+                        <div class="front-content">
+                            <p>CV</p>
+                        </div>
+                        <div class="content">
+                            <p class="heading">Download</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </h2>
+
+        </div>
+        <div class="services">
+            <h1 style="width:100vw; font-size: 52px; position: relative; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center;">My&nbsp;<span class="modecolor">
+                    Skills</span>
+            </h1>
+            <h1 style="width:100vw; font-size: 20px; position: absolute; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center; top: 10%;">What I am&nbsp;<span class="modecolor">
+                    proficient in</span>
+            </h1>
+            <div class="one-div" id="lua">
+                <img class="textimg" src="lua.png">
+                <div class="text">LuaU</div>
+            </div>
+            <div class="one-div" id="java">
+                <img class="textimg" src="Java-Logo.png">
+                <div class="text">Java</div>
+            </div>
+            <div class="one-div" id="python">
+                <img class="textimg" src="python.png">
+                <div class="text">Python</div>
+            </div>
+            <div class="one-div" id="html">
+                <img class="textimg" src="html.png">
+                <div class="text">HTML</div>
+            </div>
+            <div class="one-div" id="js">
+                <img class="textimg" src="js.png">
+                <div class="text">JavaScript</div>
+            </div>
+            <div class="one-div" id="css">
+                <img class="textimg" src="css.png">
+                <div class="text">CSS</div>
+            </div>
+
+        </div>
+        <div class="services2">
+            <h1 style="width:100vw; font-size: 52px; position: absolute; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center; top: 10%;"><span class="modecolor">
+                    My&nbsp;</span>Services
+            </h1>
+            <h1 style="width:100vw; font-size: 20px; position: absolute; font-family: quicksand;
+        display: flex; align-items: center; justify-content: center; top: 20%;">What I&nbsp;<span
+                    class="modecolor">Offer</span>
+            </h1>
+            <div class="card2" id="web" style="top: 250px; left: 10%;"><img src="web design.png"></div>
+            <div class="card2" id="gamedev" style="top:250px; left: 40%;"><img style="width: 250px;" src="gamdev.png">
+            </div>
+            <div class="card2" id="animate" style="top:250px; left: 70%;"><img style="width: 250px;"
+                    src="animation.png"></div>
+        </div>
+    </main>
+    <img src="selfiething.png" class="self">
+    <script>
+        let mybutton = document.getElementById("btt");
+        window.onscroll = function () { scrollFunction() };
+        window.onload = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+</body>
+
+</html>
