@@ -8,7 +8,7 @@
     <script src="script.js"></script>
 </head>
 
-<body style="overflow-x: hidden;" onload="getpref();">
+<body style="overflow-x: hidden;">
     <button class="button2" id="btt" onclick="topFunction()">
         <svg class="svgIcon" viewBox="0 0 384 512">
             <path
@@ -136,7 +136,7 @@
     <script>
         let mybutton = document.getElementById("btt");
         window.onscroll = function () { scrollFunction() };
-        window.onload = function() {scrollFunction()};
+        window.onload = function() {scrollFunction(), getpref()};
 
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
